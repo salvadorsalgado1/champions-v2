@@ -2,6 +2,9 @@ import React from 'react';
 import {Button, Container, Row, Col} from 'react-bootstrap';
 import Logo from '../images/logo_transparent.png';
 import background from '../images/ball.jpg';
+import {Link, } from 'react-router-dom';
+import Stats from './Stats';
+
 
 const style = {
     height:"100vh",
@@ -36,7 +39,12 @@ function Title()
 
                     </Col>
                     <Col  xs = "12" s = "12" md = "12" lg = "12" xlg = "12">
-                        <Button style = {buttonStyle} variant = "primary btn-lg">Continue</Button>
+
+                    <Link to = "/stats" component = {Stats}>
+                      <Button style = {buttonStyle} variant = "primary btn-lg">Continue</Button>
+                    </Link>
+                      
+
                     </Col>
                     
                 </Row>

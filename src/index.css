@@ -1,0 +1,61 @@
+html {
+
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+ 
+
+}
+
+body {
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+.Title{
+
+  background-image:url('./images/srim.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+  background-attachment: fixed;
+
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.fadeIn
+{
+  animation-duration:5s;
+  animation-delay:.65s;
+  animation-iteration-count:1;
+}
+
+
+.overlay{
+  background-color:rgb(0, 0, 0, 0.75);
+}
+
+.Main{
+  background-image:url("./images/net.jpg");
+  background-attachment:fixed;
+  background-position: center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.Stats 
+{
+  
+
+}
+
+
+

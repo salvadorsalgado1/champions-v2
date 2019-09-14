@@ -1,11 +1,10 @@
 {
+  "homepage": "https://salvadorsalgado1.github.io/champions/",
   "name": "nba",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://salvadorsalgado1.github.io/champions/",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
@@ -33,5 +32,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }

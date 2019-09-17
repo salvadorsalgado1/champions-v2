@@ -10,12 +10,8 @@ const client = axios.create({
 class APIClient {
 
 
-
-
-
-
 getPlayer(player){
-    return this.perform('get', `/players/${player.id}`);
+    return this.perform('get', `/players/${player.player_name}`);
 }
 
 

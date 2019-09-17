@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title';
@@ -9,12 +9,23 @@ import Main from './components/Main';
 import CompareOne from './components/CompareOne';
 import CompareCont from './components/CompareCont';
 import {HashRouter, Router, Route, Link, Switch} from 'react-router-dom';
+import APIClient from './components/APIClient';
+
+import Data from './components/Data';
+
+
 
 function App() {
+  
  
+   
   return (
     
     <div className="App" >
+
+
+
+
     {/*
     
     <HashRouter>
@@ -24,8 +35,11 @@ function App() {
       </Switch>
       </HashRouter>
     */}
-      <NavbarPage/>
-     <CompareCont/>
+
+    
+    <Data/>
+     
+   
     
     </div>
   );

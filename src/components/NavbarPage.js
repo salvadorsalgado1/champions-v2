@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, NavbarBrand, Button, Container, Row, Col, } from 'react-bootstrap';
+import {Navbar, NavbarBrand, Button, Container, Row, Col, NavbarToggler } from 'react-bootstrap';
 
 
 const textColor = {
@@ -22,7 +22,10 @@ function NavbarPage() {
         
     </NavbarBrand>
 
-    <Button className = "navbar-toggler" data-target = "#navbaropen" data-toggle="collapse"style = {textColor}>Open</Button>
+    <Button className = "navbar-toggler" data-target = "#navbaropen" data-toggle="collapse"style = {textColor}>
+      Open
+    
+    </Button>
 
     <div className = "collapse navbar-collapse" id = "navbaropen">
         <ul className = "navbar-nav ml-auto">

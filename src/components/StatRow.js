@@ -3,8 +3,7 @@ import React from 'react';
 function StatRow(props)
 {
     return(
-         <tr>
-        
+         <tr>       
             <th scope = "row">{props.num}</th>
             <th>{props.Name}</th>
             <th>{props.mName}</th>
@@ -15,8 +14,7 @@ function StatRow(props)
             <th>{props.TripleD}</th>
             <th>{props.PPG}</th>
             <th>{props.Win}</th>
-            <th>{props.Years}</th>
-        
+            <th>{props.Years}</th>      
         </tr>
                             
                                    

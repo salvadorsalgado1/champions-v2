@@ -4,7 +4,7 @@ import StatRow from './StatRow';
 
 
 const top = {
-    paddingTop:"3rem"
+    paddingTop:"100px"
 }
 
 
@@ -81,7 +81,8 @@ function Stats(props)
                                     Win = "120"
                                     Years = "5"
                                     /> 
-                                     <StatRow 
+                                    
+                                    <StatRow 
                                     num = "3"
                                     Name = "Rodrigo"
                                     mName = "Ullyses"

@@ -15,10 +15,10 @@ export class Main extends Component
     return(
         
        
-       <div>
-  {this.props.children}
+    <div>
+        {this.props.children}
 
-</div>
+    </div>
        
     )
 }

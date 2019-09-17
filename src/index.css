@@ -27,6 +27,11 @@ body {
   background-attachment: fixed;
  
 
+ 
+
+}
+.pictureBack {
+  background-image:url("./images/logo_transparent.png");
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -39,7 +44,11 @@ code {
   animation-delay:.65s;
   animation-iteration-count:1;
 }
-
+.fadeOut{
+  animation-duration:5s;
+  animation-delay:.65s;
+  animation-iteration-count:1;
+}
 
 .overlay{
   background-color:rgb(0, 0, 0, 0.75);
@@ -60,6 +69,7 @@ code {
  
  
 }
+
 .Stats{
   background-image:url("./images/net.jpg");
  

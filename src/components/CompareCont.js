@@ -2,6 +2,7 @@ import React from 'react';
 import CompareOne from "./CompareOne";
 import CompareTwo from './CompareTwo';
 import Home from './CompareTwo';
+import Data from './Data';
 import {Card, CardBody, Row, Col, Container} from 'react-bootstrap';
 
 
@@ -38,7 +39,7 @@ function CompareCont(props)
                         <Col>
                             <Card>
                                 <Card.Body>
-                               
+                             <Data/>
                                 </Card.Body>
                             </Card>
                         </Col>

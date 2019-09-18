@@ -10,10 +10,7 @@ import CompareOne from './components/CompareOne';
 import CompareCont from './components/CompareCont';
 import {HashRouter, Router, Route, Link, Switch} from 'react-router-dom';
 import APIClient from './components/APIClient';
-
 import Data from './components/Data';
-
-
 
 function App() {
   
@@ -23,24 +20,18 @@ function App() {
     
     <div className="App" >
 
-
-
-
-    {/*
+    
     
     <HashRouter>
       <Switch>
       <Route exact from ={"/"} component = {Title}></Route>
-      <Route path = {"/stats"} component = {Stats}></Route>     
+      <Route path = {"/main"} component = {Main}></Route> 
+      <Route path = {"/comparecont"} component = {CompareCont}></Route>   
       </Switch>
       </HashRouter>
-    */}
-
     
-    <Data/>
-     
    
-    
+   
     </div>
   );
 }

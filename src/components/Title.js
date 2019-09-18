@@ -4,8 +4,9 @@ import Logo from '../images/logo_transparent.png';
 import background from '../images/ball.jpg';
 import {Link, } from 'react-router-dom';
 import Stats from './Stats';
-
-
+import CompareCont from './CompareCont';
+import CompareOne from './CompareOne';
+import Main from './Main';
 const style = {
     height:"100vh",
 }
@@ -35,18 +36,11 @@ function Title()
            <Container className = "d-flex justify-content-center align-items-center" style = {style}>
                 <Row>
                     <Col xs = "12" s = "12" md = "12" lg = "12" xlg = "12">
-                        
-
-                        <Link to = "/stats" component = {Stats}>
-                            
+                        <Link to = "/main" component = {Main}>    
                         <img className = "animated fadeIn" style = {logoStyle} src = {Logo}/>
                         </Link>
-
-                    </Col>
-
-                    
+                    </Col>                  
                 </Row>
-              
             </Container>
             
            </div>

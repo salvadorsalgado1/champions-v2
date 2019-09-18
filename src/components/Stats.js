@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card, Body, Container, Row, Col, Table} from 'react-bootstrap';
 import StatRow from './StatRow';
-
+import NavbarPage from './NavbarPage';
 
 const top = {
     paddingTop:"100px"
@@ -11,11 +11,12 @@ const top = {
 function Stats(props)
 {
     return(
+        
         <div style = {top} className = "Stats">
-
+       
+  
             <div data-spy = "scroll" className = "scrollspy">
 
-           
             <Container>
                 <Row>
                 <Col>

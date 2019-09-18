@@ -21,18 +21,7 @@ function CompareCont(props)
                         <Col>
                             <Card>
                                 <Card.Body>
-                                    <CompareOne
-                                    
-                                    Name = "salvador" /*full name from DB*/
-                                    Position = "database.position"
-                                    Pin = "1234"
-                                    Three = "432"
-                                    Points = "3423"
-                                    PPG = "45.4"
-                                    Wins = "200"
-                                    League = "8"
-                                    
-                                    />
+                                  <Data/>
                                 </Card.Body>
                             </Card>
                         </Col>

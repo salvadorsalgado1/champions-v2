@@ -21,7 +21,7 @@ function CompareCont(props)
                         <Col>
                             <Card>
                                 <Card.Body>
-                                  <Data/>
+                            <Data/>
                                 </Card.Body>
                             </Card>
                         </Col>

@@ -37,6 +37,7 @@ let SecondPlayer = 'Dwyane Wade';
    {
      return null;
    }
+   
    console.log(this.state.players);
    return(
      <div>
@@ -51,16 +52,16 @@ let SecondPlayer = 'Dwyane Wade';
    /*Begin Nested */
     fieldGoalAtt = {this.state.players.shooting.field_goal_attempted}
     fieldGoalMade = {this.state.players.shooting.field_goal_made}
-    fieldGoalPercent = {this.state.players.shooting.field_goal_pct}
+    fieldGoalPercent = {this.state.players.shooting.field_goal_pct*100}
     freeThrowAttempt = {this.state.players.shooting.free_throw_attempted}
     freeThrowMade = {this.state.players.shooting.free_throw_made}
 
-    freeThrowPct = {this.state.players.shooting.free_throw_pct}
+    freeThrowPct = {this.state.players.shooting.free_throw_pct*100}
     PPG = {this.state.players.shooting.points}
     ThreePointersAttempted = {this.state.players.shooting.three_pt_attempted}
     ThreePointersMade = {this.state.players.shooting.three_pt_made}
-    ThreePointersPct = {this.state.players.shooting.three_pt_pct}
-    trueSTGPct = {this.state.players.shooting.true_stg_pct}
+    ThreePointersPct = {this.state.players.shooting.three_pt_pct*100}
+    trueSTGPct = {this.state.players.shooting.true_stg_pct*100}
     /*End Nested*/
     defReb = {this.state.players.def_reb}
     offReb = {this.state.players.off_reb}

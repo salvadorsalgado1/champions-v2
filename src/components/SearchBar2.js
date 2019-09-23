@@ -10,7 +10,6 @@ import CompareStructure from './CompareStructure';
 
 
 
-
 /**
  * 
  * 
@@ -49,9 +48,7 @@ import CompareStructure from './CompareStructure';
 
 
 
-
-
-class SearchBar extends Component
+class SearchBar2 extends Component
 {
     constructor(props) {
         super(props);
@@ -60,11 +57,6 @@ class SearchBar extends Component
           player:'Pau Gasol',
     };
 
-
-
-
-
-    
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         
@@ -121,4 +113,4 @@ class SearchBar extends Component
    )
    }
 }
-export default SearchBar
+export default SearchBar2

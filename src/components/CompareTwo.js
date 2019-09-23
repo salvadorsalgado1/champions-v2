@@ -1,27 +1,42 @@
 import React from 'react';
-import {Button, Card, CardBody, Container, Col, Row} from "react-bootstrap";
+import Data from './Data';
+import {Card, Row, Col, Container} from 'react-bootstrap';
+import NavbarPage from './NavbarPage';
+import Data2 from './Data2';
 
-
+const paddingT = {
+    paddingTop :"100px"
+}
 
 function CompareTwo(props)
 {
     return(
-        <div className = "CompareTwo">
+        <div className = "Main" style = {paddingT}>
+            <NavbarPage/>
+                <Container>
+                    <Row>
+                        <Col>
+                            <Card>
+                                <Card.Body>
 
+                                    <Data/>
+                                 
+                         
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col>
+                            <Card>
+                                <Card.Body>
 
-       
-                       <div className = "statContainer">
-                        <h5>Name:&nbsp;{props.Name}</h5>
-                       <h5>Position:&nbsp;{props.Position}</h5>
-                       <h5>Asists:&nbsp;{props.Assists}</h5>
-                      <h5>Blocks:&nbsp;{props.Blocks}</h5>
-                      <h5>First NBA Season:&nbsp; {props.Season}</h5>
-                      <h5></h5>
-                      
-                       </div>
-          
-
-
+                                   
+                                    <Data2/>
+                              
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                </Container>
         </div>
     )
 }

@@ -16,17 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
-.Title{
 
-  background-image:url('./images/srim.jpg');
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position:center center;
-  background-attachment: fixed;
- 
-}
 .pictureBack {
   background-image:url("./images/logo_transparent.png");
+ 
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -44,9 +37,20 @@ code {
   animation-delay:.65s;
   animation-iteration-count:1;
 }
+.Title{
 
+  background-image:url('./images/srim.jpg');
+ background-attachment: fixed;
+  background-position:center center;
+  background-size:cover;
+ background-repeat:no-repeat;
+}
 .overlay{
   background-color:rgb(0, 0, 0, 0.75);
+  background-attachment: fixed;
+  background-position:center center;
+   background-size:cover;
+  background-repeat:no-repeat;
 }
 
 .Main{
@@ -56,7 +60,11 @@ code {
   background-size:cover;
   background-repeat:no-repeat;
 }
-
+.backgroundCard
+{
+  background-image:url("./images/logo.png");
+  opacity: 0.1;
+}
 
 
 

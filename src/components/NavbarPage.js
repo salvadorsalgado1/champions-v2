@@ -1,6 +1,8 @@
 import React from 'react';
-import {Navbar, NavbarBrand, Button, Container, Row, Col, NavbarToggler } from 'react-bootstrap';
-
+import {NavbarBrand, Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+import Title from './Title';
+import Main from './Main';
 
 const textColor = {
 color:"white",
@@ -13,14 +15,14 @@ fontSize : "1.5rem",
 color:"white"
 
 }
-let yearJoin = 2015;
+
 
 function NavbarPage() {
     return(
 
  <div className = "navbar bg-dark navbar-expand-lg fixed-top"> 
     <NavbarBrand>
-        <a className = "lead" style = {textSize} href = "/">Champion</a>       
+        <p className = "lead" style = {textSize}>Champion</p>
     </NavbarBrand>
 
     <Button className = "navbar-toggler" data-target = "#navbaropen" data-toggle="collapse"style = {textColor}>
@@ -28,19 +30,32 @@ function NavbarPage() {
     </Button>
     <div className = "collapse navbar-collapse" id = "navbaropen">
         <ul className = "navbar-nav ml-auto">
+                <li className = 'nav-item'>
+
+
+                <Link to = '/' component = {'./Title.js'} >
+                {/*'./Title.js' */}
+                    <p className = "nav-link lead" style = {textColor}>Title</p>
+                    
+                    </Link>
+                </li>
+
+
+
             <li className = "nav-item">
-                <a href = "#" className = "nav-link">
-                <p className = "lead" style = {textColor}>Homepage</p>
-                </a>
+
+               <Link to = "/home" component = {'./Main.js'}>
+              
+                    <p className = "nav-link lead" style = {textColor}>Home</p>
+                
+                </Link>
+               
             </li>
             <li className = "nav-item">
-                <a href = "#" className = "nav-link"><p className = "lead" style = {textColor}>Teams</p></a>
+                <p className = "nav-link lead" style = {textColor}>Seasons</p>
             </li>
             <li className = "nav-item">
-                <a href = "#" className = "nav-link"><p className = "lead" style = {textColor}>Seasons</p></a>
-            </li>
-            <li className = "nav-item">
-                <a href = "#" className = "nav-link"><p className = "lead" style = {textColor}>Leaders</p></a>
+             <p className = "nav-link lead" style = {textColor}>Leaders</p>
             </li>
         </ul>
      </div>       

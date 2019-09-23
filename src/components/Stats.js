@@ -1,7 +1,7 @@
 import React from 'react';
-import {Card, Body, Container, Row, Col, Table} from 'react-bootstrap';
-import StatRow from './StatRow';
-import NavbarPage from './NavbarPage';
+import {Card, Container, Row, Col, Table} from 'react-bootstrap';
+
+
 
 const top = {
     paddingTop:"100px"
@@ -69,47 +69,7 @@ function Stats(props)
                                        
                                     </tr>
                                        
-                                    <StatRow 
-                                    num = "2"
-                                    Name = "Jalen"
-                                    mName = "Micah"
-                                    LName = "Love"
-                                    Pin = "1122"
-                                    Pointers = "333"
-                                    Points = "893"
-                                    TripleD = "44"
-                                    PPG = "60.8"
-                                    Win = "120"
-                                    Years = "5"
-                                    /> 
-                                    
-                                    <StatRow 
-                                    num = "3"
-                                    Name = "Rodrigo"
-                                    mName = "Ullyses"
-                                    LName = "Curiel"
-                                    Pin = "1234"
-                                    Pointers = "120"
-                                    Points = "60"
-                                    TripleD = "5"
-                                    PPG = "33.8"
-                                    Win = "78"
-                                    Years = "3"
-                                    /> 
-                                      <StatRow 
-                                    num = "4"
-                                    Name = "LeBron"
-                                    mName = ""
-                                    LName = "James"
-                                    Pin = "1904"
-                                    Pointers = "120"
-                                    Points = "60"
-                                    TripleD = "11"
-                                    PPG = "56.8"
-                                    Win = "201"
-                                    Years = "8"
-                                    /> 
-                            
+                                
 
                                     
                                 </tbody>

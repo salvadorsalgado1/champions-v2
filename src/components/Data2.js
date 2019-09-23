@@ -1,40 +1,45 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, Button, FormControl, Form} from 'react-bootstrap';
 import axios from 'axios';
-import APIClient from './APIClient';
+import APIClient2 from './APIClient2';
 import CompareStructure from './CompareStructure';
 
-class Data extends Component {
+class Data2 extends Component {
   constructor(props) {
    super(props);
 
 
    this.state = {
      player:{
-         player_name: 'Kobe Bryant',
-       
+         player_name: 'LeBron James',
+
      },
      players:null,
    
      
    };
+
    this.handleChange = this.handleChange.bind(this);
    this.handleSubmit = this.handleSubmit.bind(this);
  }
 
  handleChange(event) {
-   
+
   event.preventDefault();
+
 }
+
 
 handleSubmit = (event) => {
 
 event.preventDefault();
 const data = this.state;
+
 console.log(data);
 console.log(event);
 console.log(event.target.player_name);
 console.log(event.target.value);
+
 this.setState({[event.target.player_name]: event.target.value});
 this.setState({player_name: event.target.value});
 this.getInfo(data);
@@ -42,18 +47,21 @@ this.getInfo(data);
 }
 
 getInfo = (data) => {
+
   this.setState({data, player: data});
-  this.APIClient  = new APIClient();
-  this.APIClient.getPlayer(this.state).then((data) =>
+  this.APIClient2  = new APIClient2();
+  this.APIClient2.getPlayer(this.state).then((data) =>
   this.setState({data, players:data})) ;
+
 }
 
  componentDidMount(state){
-
+ 
   this.setState({player:state});
-  this.APIClient  = new APIClient();
-  this.APIClient.getPlayer(this.state.player).then((data) =>
+  this.APIClient2  = new APIClient2();
+  this.APIClient2.getPlayer(this.state.player).then((data) =>
   this.setState({state, players:data})) ;
+
  };
 
  render() {
@@ -61,25 +69,25 @@ getInfo = (data) => {
    {
      return null;
    }
-
+   
+  
    return(
      <div>
-       
-    
-      <p className = "lead">Search for your player!</p>
 
-      <Form onSubmit = {this.handleSubmit}>
-          <Container>
-              <Row>
-                  <Col>
-                  <FormControl name = 'player_name' type = "text" placeholder="Search" className = "mr-sm-2" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
-                  </Col>
-                  <Col>
-                  <Button  type = "submit" value = "Submit" variant = "primary">Submit</Button>
-                  </Col>
-              </Row>
-          </Container>
-      </Form>
+        <p className = "lead">Search for your player!</p>
+
+        <Form onSubmit = {this.handleSubmit}>
+            <Container>
+                <Row>
+                    <Col>
+                    <FormControl name = 'player_name' type = "text" placeholder="Search" className = "mr-sm-2" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
+                    </Col>
+                    <Col>
+                    <Button  type = "submit" value = "Submit" variant = "primary">Submit</Button>
+                    </Col>
+                </Row>
+            </Container>
+        </Form>
 
       <CompareStructure
 
@@ -107,7 +115,6 @@ getInfo = (data) => {
       totReb = {this.state.players.tot_reb}
       turnOvers = {this.state.players.turnovers}
       steals = {this.state.players.steals}/>
-
      </div>
    );
  }
@@ -118,4 +125,4 @@ getInfo = (data) => {
  
 }
 
-export default Data
+export default Data2;

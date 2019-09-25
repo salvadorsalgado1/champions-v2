@@ -1,6 +1,9 @@
 import React from 'react';
-import { Table} from "react-bootstrap";
+import { Table, Card, Col, Row, Container} from "react-bootstrap";
 
+const shadow = {
+    boxShadow:"5px 5px 5px black"
+}
 
 
 function CompareStructure(props)
@@ -41,15 +44,30 @@ function CompareStructure(props)
 
 
                    
-                      <br/>
-                      <br/>
+                    <br/>
                       <Table responsive striped bordered hover>
                                
                                 <tbody>
+                                    <th colspan = "2">
+                                       
+                                        
+                                        <Card className = "bg-secondary">
+                                            <Card.Body>
+                                                <img className = "rounded-circle" src = {props.PlayerImage} alt = "player Image"/>
+                                            </Card.Body>
+                                        </Card>
+
+
+
+
+                                    </th>
                                     <tr>
                                     
                                          <th scope = "row">Name</th>
+                                         
                                        <th> <h5>{props.Name}</h5></th>
+
+
                                       </tr>
 
                                       <tr>

@@ -4,6 +4,9 @@ import axios from 'axios';
 import APIClient2 from './APIClient2';
 import CompareStructure from './CompareStructure';
 
+import lebron from '../images/lebron.jpg';
+const shadow = {boxShadow:"5px 5px 5px black"}
+
 class Data2 extends Component {
   constructor(props) {
    super(props);
@@ -75,14 +78,14 @@ getInfo = (data) => {
      <div>
 
         <p className = "lead">Search for your player!</p>
-
+        <hr/>
         <Form onSubmit = {this.handleSubmit}>
             <Container>
                 <Row>
-                    <Col>
-                    <FormControl name = 'player_name' type = "text" placeholder="Search" className = "mr-sm-2" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
+                    <Col xs = "8" sm = "6" md = "6" lg = "6" xlg = "6">
+                    <FormControl name = 'player_name' type = "text" placeholder="Search Player" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
                     </Col>
-                    <Col>
+                    <Col >
                     <Button  type = "submit" value = "Submit" variant = "primary">Submit</Button>
                     </Col>
                 </Row>
@@ -90,7 +93,7 @@ getInfo = (data) => {
         </Form>
 
       <CompareStructure
-
+      PlayerImage = {lebron}
       Name = {this.state.players.player_name}
       Season = {this.state.players.first_nba_season}
       Position = {this.state.players.positions}

@@ -10,7 +10,7 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 
 import Introduction from './components/Introduction';
 import CompareOne from './components/CompareOne';
-
+import TitleVid from './components/TitleVid';
 
 
 function App() {
@@ -26,11 +26,12 @@ function App() {
     
     <HashRouter>
       <Switch>
-      <Route exact from ={"/"} component = {Title}></Route>
+      <Route exact from ={"/"} component = {TitleVid}></Route>
       <Route path = {"/home"} component = {Main}></Route> 
       <Route path = {"/twoplayers"} component = {CompareTwo}></Route>  
       <Route path = {"/introduction"} component = {Introduction}></Route> 
       <Route path = {"/oneplayer"} component = {CompareOne}></Route>
+      
       </Switch>
       </HashRouter>
     

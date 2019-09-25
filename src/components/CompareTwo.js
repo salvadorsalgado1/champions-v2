@@ -3,7 +3,7 @@ import Data from './Data';
 import {Card, Row, Col, Container} from 'react-bootstrap';
 import NavbarPage from './NavbarPage';
 import Data2 from './Data2';
-
+const shadow = {boxShadow:"5px 5px 5px black"}
 const paddingT = {
     paddingTop :"100px"
 }
@@ -16,7 +16,7 @@ function CompareTwo(props)
                 <Container>
                     <Row>
                         <Col>
-                            <Card>
+                            <Card style = {shadow}>
                                 <Card.Body>
 
                                     <Data/>
@@ -26,7 +26,7 @@ function CompareTwo(props)
                             </Card>
                         </Col>
                         <Col>
-                            <Card>
+                            <Card style = {shadow}>
                                 <Card.Body>
 
                                    

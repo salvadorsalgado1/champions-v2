@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import NavbarPage from './NavbarPage';
-
+import TitleVid from './TitleVid';
 import Introduction from './Introduction';
+import videoPage from './videoPage';
 const height = {
     height:"100vh"
 }
@@ -12,10 +13,10 @@ export class Main extends Component
      
     return(
         <div className = "Main" style = {height}>
-            <NavbarPage/>
-            <Introduction/>
+           <NavbarPage/>
+           <Introduction/>
         
-        
+
         </div>
     )
 }

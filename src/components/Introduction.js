@@ -7,18 +7,22 @@ import background from '../images/logo_transparent.png';
 import CompareOne from './CompareOne';
 
 const paddingT = {
-    paddingTop:"100px",
+    paddingTop:"120px",
 }
 const cardStyle = {
-width:"25rem"
+width:"25rem",
+boxShadow:"5px 5px 5px black"
 }
 const backgroundStyle = {
     opacity:".05"
 }
+const iconColor = {
+
+}
 function Introduction(){
     return(
         <div className = "Main d-flex justify-content-center text-center" style = {paddingT} >
-<NavbarPage/>
+            <NavbarPage/>
             <div className = "d-flex justify-content-center text-center" >
                 
             <Card style = {cardStyle} className = "d-flex justify-content-center text-center">
@@ -28,11 +32,15 @@ function Introduction(){
 
                     
                 <Card.ImgOverlay >
-
+             
                 <p className = "lead">Welcome to Champions. With this application, you have the ability to look up stats for your
                 favorite player and compare both of them and see how their stats stack up with each other.
-                <br/>
-                <br/>
+                <br/> 
+                <i class="fas fa-basketball-ball fa-2x"></i>
+              
+                 <br/>
+                
+                
                 Click the button below to begin!
                 </p>
 
@@ -55,7 +63,7 @@ function Introduction(){
                          </Col>
                      </Row>
                  </Container>
-  </Card.ImgOverlay>
+                </Card.ImgOverlay>
 
 
                 </Card.Body>

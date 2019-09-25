@@ -3,6 +3,13 @@ import {Container, Row, Col, Button, FormControl, Form} from 'react-bootstrap';
 import axios from 'axios';
 import APIClient from './APIClient';
 import CompareStructure from './CompareStructure';
+import bryant from '../images/bryant.jpg';
+
+
+
+const shadow = {
+  boxShadow:"5px 5px 5px black"
+}
 
 class Data extends Component {
   constructor(props) {
@@ -67,12 +74,15 @@ getInfo = (data) => {
        
     
       <p className = "lead">Search for your player!</p>
+      <hr/>
 
       <Form onSubmit = {this.handleSubmit}>
           <Container>
               <Row>
-                  <Col>
-                  <FormControl name = 'player_name' type = "text" placeholder="Search" className = "mr-sm-2" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
+              <Col xs = "8" sm = "6" md = "6" lg = "6" xlg = "6">
+               
+
+                  <FormControl name = 'player_name' type = "text" placeholder="Search Player" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
                   </Col>
                   <Col>
                   <Button  type = "submit" value = "Submit" variant = "primary">Submit</Button>
@@ -82,7 +92,7 @@ getInfo = (data) => {
       </Form>
 
       <CompareStructure
-
+PlayerImage = {bryant}
       Name = {this.state.players.player_name}
       Season = {this.state.players.first_nba_season}
       Position = {this.state.players.positions}

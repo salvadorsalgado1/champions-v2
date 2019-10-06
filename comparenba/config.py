@@ -7,3 +7,4 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
     'postgresql+psycopg2://postgres:@localhost/champion'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    ELASTICSEARCH_URL = 'http://localhost:9200'

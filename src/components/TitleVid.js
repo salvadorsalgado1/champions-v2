@@ -10,7 +10,7 @@ const videoSize = {
 const background = {
   backgroundColor:"black",
  
- 
+
 }
 const buttonStyle = {
   border:"2px white solid",

@@ -96,11 +96,11 @@ getInfo = (data) => {
       <Form onSubmit = {this.handleSubmit}>
           <Container>
               <Row>
-              <Col xs = "8" sm = "6" md = "6" lg = "6" xlg = "6">
+              <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
                
-                  <FormControl style = {search} name = 'player_name' type = "text" placeholder="Search Player" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
+                  <FormControl style = {search} name = 'player_name' type = "text" placeholder="Search Player, ex. 'Kobe Bryant'" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
                   </Col>
-                  <Col>
+                  <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
                   <Button style = {shadow} type = "submit" value = "Submit" variant = "primary">Search</Button>
                   </Col>
               </Row>

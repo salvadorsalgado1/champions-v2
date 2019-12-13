@@ -3,22 +3,17 @@ import Data from './Data';
 import {Card, Row, Col, Container} from 'react-bootstrap';
 import NavbarPage from './NavbarPage';
 import Data2 from './Data2';
-import background from '../images/court3.jpg';
-import CompareStructure from './CompareStructure';
-
 
 const shadow = {boxShadow:"5px 5px 5px black"}
-const paddingT = {
-    paddingTop :"100px"
-}
+
 
 function CompareTwo(props)
 {
     return(
-        <div className = "Main" style = {paddingT}>
+        <div className = "Main"  >
             <NavbarPage/>
-                <Container>
-                    <Row>
+                <Container className = "mt-5 mb-4">
+                    <Row className = "mb-4">
                         <Col>
                             <Card style = {shadow} className = "lead">
                                 <Card.Body>
@@ -31,6 +26,8 @@ function CompareTwo(props)
                                 </Card.Body>
                             </Card>
                         </Col>
+                        </Row>
+                        <Row>
                         
                         <Col>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+
 import Title from './components/Title';
 
 import Main from './components/Main';
@@ -11,6 +11,7 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 import Introduction from './components/Introduction';
 import CompareOne from './components/CompareOne';
 import TitleVid from './components/TitleVid';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
  
   return (
     
-    <div className="App" >
+    <div className="App " >
 
 
     
@@ -35,7 +36,7 @@ function App() {
       </Switch>
       </HashRouter>
     
-   
+ 
    
     </div>
   );

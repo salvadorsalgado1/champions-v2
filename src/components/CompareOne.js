@@ -4,12 +4,13 @@ import NavbarPage from './NavbarPage';
 
 import Data from './Data';
 const shadow = {
-    boxShadow:"5px 5px 5px black",
+ 
     
 
 }
 
-const cardSize = {width:"26rem"}
+const cardSize = {width:"100%",
+boxShadow:"5px 5px 5px black",}
 const paddingT = {
     paddingTop:"105px",
    
@@ -22,18 +23,14 @@ function CompareOne(props)
         <div className = "Main CompareOne" style = {paddingT}>
             <NavbarPage/>
 
-                <Container  style = {cardSize}>
+                <Container >
                     <Row>
                         <Col>
-                            <Card  style = {shadow} >
+                            <Card  style = {cardSize} >
                                 <Card.Body>
-                                    <Container>
-                                        <Row>
-                                            <Col>
+                                   
                                                 <Data/>                                 
-                                            </Col>             
-                                        </Row>
-                                    </Container>
+                                          
                                 </Card.Body>
                             </Card>
                         </Col>

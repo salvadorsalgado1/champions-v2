@@ -9,7 +9,7 @@ import bryant from '../images/bryant.jpg';
 
 const shadow = {boxShadow:"3px 3px 3px black"}
 
-const search = {width:"10rem"}
+const searchh = {width:"10rem"}
 
 class Data extends Component {
   constructor(props) {
@@ -19,10 +19,11 @@ class Data extends Component {
    this.state = {
      player:{
          player_name: 'Kobe Bryant',
-        
+         
      },
-     
-     players:null,
+     view:false,
+     players:null
+    
      
    };
    this.handleChange = this.handleChange.bind(this);
@@ -41,10 +42,7 @@ handleSubmit = (event) => {
 
 event.preventDefault();
 let data = this.state;
-console.log(data);
-console.log(event.target.player_name);
-console.log(event.target.value);
-console.log(data.players.player_image);
+
 
 this.setState({[event.target.player_name]: event.target.value});
 this.setState({player_name: event.target.value});
@@ -98,7 +96,7 @@ getInfo = (data) => {
               <Row>
               <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
                
-                  <FormControl style = {search} name = 'player_name' type = "text" placeholder="Search Player, ex. 'Kobe Bryant'" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
+                  <FormControl name = 'player_name' type = "text" placeholder="Search Player, ex. 'Kobe Bryant'" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
                   </Col>
                   <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
                   <Button style = {shadow} type = "submit" value = "Submit" variant = "primary">Search</Button>
@@ -111,6 +109,7 @@ getInfo = (data) => {
 
 
       <CompareStructure
+      
       PlayerImage = {this.state.players.player_image}
       Name = {this.state.players.player_name}
       Season = {this.state.players.first_nba_season}

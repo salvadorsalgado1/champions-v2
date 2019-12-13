@@ -3,20 +3,22 @@ import NavbarPage from './NavbarPage';
 import TitleVid from './TitleVid';
 import Introduction from './Introduction';
 import videoPage from './videoPage';
-const height = {
-    height:"100vh"
-}
+import Results from './Results';
+import Footer from './Footer';
+
 
 export class Main extends Component
 {
     render(){
      
     return(
-        <div className = "Main" style = {height}>
+        <div className = "Main">
            <NavbarPage/>
+           
            <Introduction/>
-        
-
+           
+             
+    
         </div>
     )
 }

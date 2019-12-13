@@ -6,9 +6,7 @@ import CompareTwo from "./CompareTwo";
 import background from '../images/logo_transparent.png';
 import CompareOne from './CompareOne';
 
-const paddingT = {
-    paddingTop:"120px",
-}
+
 const cardStyle = {
 width:"25rem",
 boxShadow:"5px 5px 5px black"
@@ -22,13 +20,13 @@ boxShadow:"3px 3px 3px black"
 
 function Introduction(){
     return(
-        <div className = "Main d-flex justify-content-center text-center" style = {paddingT} >
+        <div className = "introduction" >
             <NavbarPage/>
-            <div className = "d-flex justify-content-center text-center" >
+          
                 
-            <Card style = {cardStyle} className = "d-flex justify-content-center text-center">
+            <Card style = {cardStyle}>
                    
-                <Card.Body>
+                <Card.Body className = "text-center">
                 <Card.Img style = {backgroundStyle} src={background} alt="Card image" />
 
                     
@@ -72,7 +70,7 @@ function Introduction(){
            
             </div>
          
-        </div>
+    
     )
 }
 export default Introduction

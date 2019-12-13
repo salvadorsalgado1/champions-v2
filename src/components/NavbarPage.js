@@ -18,14 +18,13 @@ color:"white"
 
 }
 const logoSize = {
-    height:"60px",
-    
+    height:"60px"
 }
 
 function NavbarPage() {
     return(
 
- <div className = "navbar bg-dark navbar-expand-lg fixed-top"> 
+ <div className = "navbar bg-dark navbar-expand-lg fixed-top py-0 text-center"> 
     <NavbarBrand>
         <p className = "lead" style = {textSize}>&nbsp;&nbsp;
         <Link to = "/" component = {TitleVid}>

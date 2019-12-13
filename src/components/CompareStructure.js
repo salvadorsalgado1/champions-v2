@@ -175,7 +175,7 @@ moreInfoHandler = () =>{
                                            <th><h5 className = "lead">{this.props.trueSTGPct.toFixed(2)}%</h5></th>
                                            </tr>
                                               
-                                       
+                                
                         </tbody>
                         </Table>
                                

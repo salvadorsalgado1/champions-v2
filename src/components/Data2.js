@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import {Container, Row, Col, Button, FormControl, Form} from 'react-bootstrap';
-import axios from 'axios';
+import {Container, Col, Button, FormControl, Form} from 'react-bootstrap';
 import APIClient2 from './APIClient2';
 import CompareStructure from './CompareStructure';
-import lebron from '../images/lebron.jpg';
 
 const shadow = {boxShadow:"3px 3px 3px black"}
 

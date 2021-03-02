@@ -1,11 +1,7 @@
 import React from "react";
-import {Card, Button, Col, Row, Container} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import NavbarPage from './NavbarPage';
-import CompareTwo from "./CompareTwo";
 import background from '../images/logo_transparent.png';
-import CompareOne from './CompareOne';
-
 
 const cardStyle = {
 width:"25rem",
@@ -22,55 +18,36 @@ function Introduction(){
     return(
         <div className = "introduction" >
             <NavbarPage/>
-          
-                
-            <Card style = {cardStyle}>
-                   
-                <Card.Body className = "text-center">
-                <Card.Img style = {backgroundStyle} src={background} alt="Card image" />
-
-                    
-                <Card.ImgOverlay >
-             
+                <div style = {cardStyle}>
+                <div className = "text-center">
+                <div style = {backgroundStyle} src={background} alt="Card image" />
+                <div>
                 <p className = "lead">Welcome to Champions. With this application, you have the ability to look up stats for your
                 favorite player and compare both of them and see how their stats stack up with each other.
                 <br/> 
-                <i class="fas fa-basketball-ball fa-2x"></i>
-              
-                 <br/>
-                
-                
-                Click a button below to begin!
-                </p>
-
-
-                 <Container>
+                <i className="fas fa-basketball-ball fa-2x"></i>
+                 <br/>Click a div below to begin!</p>
+                 <div>
                  <br/>
                 <br/>
-                     <Row>
-                         <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
-                         <Link to = "/oneplayer" component = {'/CompareOne'}>
-                            <Button style = {shadowStyle} block variant = "info"><i className="fas fa-user"></i></Button>
+                     <div>
+                         <div xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
+                         <Link to = "/oneplayer" component={'/CompareOne'} >
+                            <div style = {shadowStyle} block variant = "info"><i className="fas fa-user"></i></div>
                             </Link>
-                         </Col>
+                         </div>
 
-                         <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
-                         <Link to = "/twoplayers" component = {'./CompareTwo'}>
-                  <Button style = {shadowStyle} block variant = "info"><i className="fas fa-user-friends"></i></Button>
+                         <div xs="6" sm = "6" md = "6" lg = "6" xlg = "6">
+                         <Link to="/twoplayers" component={'./CompareTwo'}>
+                  <div style = {shadowStyle} block variant = "info"><i className="fas fa-user-friends"></i></div>
                   </Link>
-
-                         </Col>
-                     </Row>
-                 </Container>
-                </Card.ImgOverlay>
-
-
-                </Card.Body>
-            </Card>
-           
+                         </div>
+                     </div>
+                 </div>
+                </div>
+                </div>
             </div>
-         
-    
+            </div>
     )
 }
 export default Introduction

@@ -3,51 +3,6 @@ import Data from './Data';
 import {Col, Container, Row,Form, FormControl, Button} from 'react-bootstrap';
 import React, { Component } from 'react';
 
-
-import APIClient from './APIClient';
-import CompareStructure from './CompareStructure';
-
-
-
-
-/**
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * Component Not In Use, for back up only 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * */
-
-
-
-
-
-
-
-
-
-
 class SearchBar2 extends Component
 {
     constructor(props) {

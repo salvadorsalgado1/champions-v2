@@ -1,8 +1,5 @@
-import React from 'react';
-import { Button, Table, Card, Container, Row, Col} from "react-bootstrap";
-
-
-
+import React, {Component} from 'react';
+import { Button, Table, Container, Row, Col} from "react-bootstrap";
 const SizeImage = {
     width:"12rem",
     boxShadow:"5px 5px 5px 3px black"
@@ -10,8 +7,7 @@ const SizeImage = {
  const backgroundCardSize = {
      transform:"rotate(45)"
  }
-
-class CompareStructure extends React.Component{
+class CompareStructure extends Component{
   
 state = {
     view:false
@@ -39,7 +35,7 @@ moreInfoHandler = () =>{
             this.ButtonStatus = "Less"
             more = (
                
-                <Table className = "text-center" sm responsive striped bordered hover>
+                <table className = "table text-center" responsive striped bordered hover>
                 <tbody>     
                            <tr>
                            <th className = "lead" scope = "row">Three Pointers Percentage</th>
@@ -70,7 +66,7 @@ moreInfoHandler = () =>{
                            <th><h5 className = "lead">{this.props.offReb}</h5></th>
                            </tr>  
                     </tbody>
-                </Table>
+                </table>
             )
         }
         return(
@@ -79,7 +75,7 @@ moreInfoHandler = () =>{
                        <Container>
                             <Row>
                                 <Col>
-                                    <Table className = "text-center " sm responsive striped bordered hover >
+                                    <table className = "text-center "  responsive striped bordered hover >
                                     <tbody>
                                         <th className = "text-center" rowSpan = "4" style = {backgroundCardSize}>           
                                         <img style = {SizeImage}  className = "rounded-circle" src={process.env.PUBLIC_URL + '/player_images/' + this.props.PlayerImage} alt = "player"/>
@@ -87,12 +83,12 @@ moreInfoHandler = () =>{
         
                                                   
                                     </tbody>
-                                    </Table>
+                                    </table>
                                 
                                 </Col>
 
-                                <Col className = "align-items-center d-flex">
-                                    <Table className = "text-center" sm responsive striped bordered hover>
+                                <Col className="table align-items-center d-flex">
+                                    <table className = "text-center" responsive striped bordered hover>
                                         <tbody>
                                         <tr className = "lead">
                                         <th className = "lead" scope = "row">Name</th>
@@ -107,13 +103,13 @@ moreInfoHandler = () =>{
                                         <th><h5 className = "lead">{this.props.Position}</h5></th>
                                         </tr> 
                                         </tbody>
-                                    </Table>
+                                    </table>
                                 
                                 </Col>
                             </Row>
                             <Row>
                                 <Col>
-                                <Table className = "text-center" sm responsive striped bordered hover>
+                                <table className = "table text-center" responsive striped bordered hover>
                         <tbody>     
                         <tr>
                                             <th className = "table-info lead" colSpan = "2" scope = "row">Offense</th>
@@ -142,12 +138,12 @@ moreInfoHandler = () =>{
                                            <th><h5 className = "lead">{this.props.ThreePointersMade}</h5></th>
                                            </tr>
                         </tbody>
-                        </Table>
+                        </table>
                                 
                                 
                                 </Col>
                                 <Col>
-                                <Table className = "text-center" sm responsive striped bordered hover>
+                                <table className = "text-center" responsive striped bordered hover>
                         <tbody>     
                         <tr> 
                                             <th className = "table-info lead " colSpan = "2" scope = "row">Defense</th>
@@ -177,7 +173,7 @@ moreInfoHandler = () =>{
                                               
                                 
                         </tbody>
-                        </Table>
+                        </table>
                                
                             </Col>
                             </Row>
@@ -225,7 +221,7 @@ function CompareStructure(props)
                     <Container>
                         <Row>
                             <Col>
-                            <Table className = "text-center " sm responsive striped bordered hover >
+                            <Table className = "text-center " responsive striped bordered hover >
                         <tbody>
 
                                             <th className = "text-center" rowSpan = "4" style = {backgroundCardSize}>           
@@ -253,7 +249,7 @@ function CompareStructure(props)
                         </Row>
                         <Row>
                             <Col>
-                            <Table className = "text-center" sm responsive striped bordered hover>
+                            <Table className = "text-center" responsive striped bordered hover>
                     <tbody>     
                     <tr>
                                         <th className = "table-info lead" colSpan = "2" scope = "row">Offense</th>
@@ -287,7 +283,7 @@ function CompareStructure(props)
                             
                             </Col>
                             <Col>
-                            <Table className = "text-center" sm responsive striped bordered hover>
+                            <Table className = "text-center"  responsive striped bordered hover>
                     <tbody>     
                     <tr> 
                                         <th className = "table-info lead " colSpan = "2" scope = "row">Defense</th>
@@ -327,7 +323,7 @@ function CompareStructure(props)
                         </Row>
                     </Container>
 
-                    <Table className = "text-center" sm responsive striped bordered hover>
+                    <Table className = "text-center" responsive striped bordered hover>
                             <tbody>     
                                        <tr>
                                        <th className = "lead" scope = "row">Three Pointers Percentage</th>

@@ -1,43 +1,27 @@
 import React from 'react';
-
-
-import Title from './components/Title';
-
 import Main from './components/Main';
-
-import CompareTwo from './components/CompareTwo';
-import {HashRouter, Route, Switch} from 'react-router-dom';
-
-import Introduction from './components/Introduction';
+//import CompareTwo from './components/CompareTwo';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import CompareOne from './components/CompareOne';
 import TitleVid from './components/TitleVid';
-import Footer from './components/Footer';
-
+import './index.css';
 
 function App() {
-
-  
-
- 
   return (
-    
-    <div className="App " >
-
-
-    
-    <HashRouter>
-      <Switch>
-      <Route exact from ={"/"} component = {TitleVid}></Route>
-      <Route path = {"/home"} component = {Main}></Route> 
-      <Route path = {"/twoplayers"} component = {CompareTwo}></Route>  
-      <Route path = {"/introduction"} component = {Introduction}></Route> 
-      <Route path = {"/oneplayer"} component = {CompareOne}></Route>
-      
-      </Switch>
-      </HashRouter>
-    
- 
-   
+    <div className="App">
+      <Router>
+        <Switch>
+          {/*<Route path="/TitleVid"><TitleVid /></Route>
+          <Route path="/home"><Main /></Route>
+          <Route path="/twoplayers"><CompareTwo /></Route>*/}
+          <Route path="/oneplayer"><CompareOne/></Route>
+          <Route path="/"><TitleVid /></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

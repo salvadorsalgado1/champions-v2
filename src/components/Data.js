@@ -1,49 +1,30 @@
 import React, { Component } from 'react';
 import {Container, Row, Col, Button, FormControl, Form} from 'react-bootstrap';
-import axios from 'axios';
-import APIClient from './APIClient';
+import APIClient from './apiClient';
 import CompareStructure from './CompareStructure';
-import bryant from '../images/bryant.jpg';
-//import user from '../../public/player_images/user.png';
-
 
 const shadow = {boxShadow:"3px 3px 3px black"}
-
-const searchh = {width:"10rem"}
 
 class Data extends Component {
   constructor(props) {
    super(props);
-
-
    this.state = {
      player:{
          player_name: 'Kobe Bryant',
-         
      },
      view:false,
      players:null
-    
-     
    };
    this.handleChange = this.handleChange.bind(this);
    this.handleSubmit = this.handleSubmit.bind(this);
-  
-
-
  }
  
  handleChange(event) {
-   
   event.preventDefault();
 }
-
 handleSubmit = (event) => {
-
 event.preventDefault();
 let data = this.state;
-
-
 this.setState({[event.target.player_name]: event.target.value});
 this.setState({player_name: event.target.value});
 this.getInfo(data);
@@ -95,7 +76,6 @@ getInfo = (data) => {
           <Container>
               <Row>
               <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
-               
                   <FormControl name = 'player_name' type = "text" placeholder="Search Player, ex. 'Kobe Bryant'" className = "col-mr-sm-10 col-xs-6" ref = "player_name" value={this.state.player_name || ''} onChange = {event => this.setState({player_name: event.target.value})}/>
                   </Col>
                   <Col xs = "6" sm = "6" md = "6" lg = "6" xlg = "6">
@@ -104,12 +84,7 @@ getInfo = (data) => {
               </Row>
           </Container>
       </Form>
-
-     
-
-
       <CompareStructure
-      
       PlayerImage = {this.state.players.player_image}
       Name = {this.state.players.player_name}
       Season = {this.state.players.first_nba_season}
@@ -135,7 +110,6 @@ getInfo = (data) => {
       totReb = {this.state.players.tot_reb}
       turnOvers = {this.state.players.turnovers}
       steals = {this.state.players.steals}/>
-
      </div>
    );
  }

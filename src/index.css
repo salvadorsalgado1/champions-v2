@@ -1,19 +1,11 @@
-html,body{
-  
-  max-width:100%;
-  margin:0;
 
-  background-image:url('./images/srim.jpg');
- background-repeat:no-repeat;
-
- background-attachment: fixed;
- background-position:center center;
- background-size:cover;
-background-repeat:no-repeat;
-
- 
+body{
+  background-image:url('./images/srim.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
 .pictureBack {
   background-image:url("./images/logo_transparent.png");
   background-color:rgb(0, 0, 0, 0.75);
@@ -22,6 +14,7 @@ background-repeat:no-repeat;
    background-size:cover;
   background-repeat:no-repeat;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -60,18 +53,6 @@ code {
   background-repeat:no-repeat;
 }
 
-.Main{
-padding-top:100px;
-
-  background-size:cover;
-     background-position:center center;
-     background-repeat:no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  
-}
 .backgroundCard
 {
   background-image:url("./images/logo.png");
@@ -187,13 +168,3 @@ header .overlay {
 
 }
 
-.footer{
-  padding-top:25px;
-  
-  background-color:rgb(52,58,64);
-  display:flex;
- justify-content: center;
-  align-items:center;
-  color:white;
-
-}
